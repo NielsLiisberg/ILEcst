@@ -1,7 +1,8 @@
 #!/QOpenSys/pkgs/bin/python3.9
 
 # to try this out:
-# python analyze.py --host dksrv206  --pgm hello --source NLI/QSRC --out cst.json
+# python analyze.py --host MY_IBM_I  --pgm hello --source QGPL/QRPGLESRC  --out cst.json
+
 
 import argparse, sys, os, subprocess, re, json 
 
