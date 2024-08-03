@@ -2,7 +2,7 @@
 
 # to try this out:
 # python analyze.py --host MY_IBM_I  --liblist QGPL,QUSRSYS --pgm hello --source QGPL/QRPGLESRC  --out cst.json 
-# python analyze.py --host MY_IBM_I  --liblist FAXUDVDB,FAXUDV,FAX2UDV429 --pgm hello --source QGPL/QRPGLESRC  --out cst.json 
+# python analyze.py --host MY_IBM_I  --liblist FAXUDVDB,FAXUDV,FAXUDV2924,AINCLUDE --pgm fax100 --source faxudv/qsrc  --out cst.json 
 
 
 import argparse, sys, os, subprocess, re, json 
@@ -42,7 +42,7 @@ def push_globals (globalVar , ln):
 # Execute the compound script againt the IBM i
 # ------------------------------------------------------------------------
 def run_script(host, out, cmd ):
-	shell = "ssh -t " + host + " '/QOpenSys/usr/bin/qsh -c \"" + cmd  + "\"'"
+	shell = "ssh -T " + host + " '/QOpenSys/usr/bin/qsh -c \"\n" + cmd  + "\"'"
 	print (shell)
 	proc = subprocess.Popen(shell,
 		shell=True,
@@ -52,11 +52,6 @@ def run_script(host, out, cmd ):
 		universal_newlines=True,
 		encoding='latin-1'
 	)
-
-	# Format messages
-	for ln in proc.stderr:
-		ln = ln.rstrip()
-		print (ln)
 
 	# Format messages
 	state = 'code'
@@ -83,6 +78,11 @@ def run_script(host, out, cmd ):
 # produce output:
 	with open(out, "w") as outfile: 
 		json.dump(globalVar, outfile)
+
+	# Format messages
+	for ln in proc.stderr:
+		ln = ln.rstrip()
+		print (ln)
 
 	return True if proc.wait() == 0 else False
 
