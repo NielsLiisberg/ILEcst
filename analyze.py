@@ -1,14 +1,15 @@
 #!/QOpenSys/pkgs/bin/python3.9
 
 # to try this out:
-# python analyze.py --host MY_IBM_I  --pgm hello --source QGPL/QRPGLESRC  --out cst.json
+# python analyze.py --host MY_IBM_I  --liblist QGPL,QUSRSYS --pgm hello --source QGPL/QRPGLESRC  --out cst.json 
+# python analyze.py --host MY_IBM_I  --liblist FAXUDVDB,FAXUDV,FAX2UDV429 --pgm hello --source QGPL/QRPGLESRC  --out cst.json 
 
 
 import argparse, sys, os, subprocess, re, json 
 
 
 # ------------------------------------------------------------------------
-def setState (text , state ):
+def set_state (text , state ):
 		
 	if 	text == '       Global Field References:':
 		state = 'globals'
@@ -25,20 +26,22 @@ def setState (text , state ):
 		
 	return state
 
-def pushGlobals (globalVar , ln):
+# ------------------------------------------------------------------------
+# Just for now, stack globals as they are
+# ------------------------------------------------------------------------
+def push_globals (globalVar , ln):
 	if ln[0:10] == '          ' and ln != '          Field             Attributes         References (D=Defined M=Modified)':
 		var  = {
 			'name'     : ln[10:28].rstrip(),
-			'dataType' :  ln[28:44].rstrip(),
+			'dataType' : ln[28:44].rstrip(),
 			'usage'    : ln[52:999].rstrip() 
 		}
 		globalVar.append(var)
-		
 
 # ------------------------------------------------------------------------
 # Execute the compound script againt the IBM i
 # ------------------------------------------------------------------------
-def runscript(host, out, cmd ):
+def run_script(host, out, cmd ):
 	shell = "ssh -t " + host + " '/QOpenSys/usr/bin/qsh -c \"" + cmd  + "\"'"
 	print (shell)
 	proc = subprocess.Popen(shell,
@@ -60,12 +63,12 @@ def runscript(host, out, cmd ):
 	globalVar= []
 	for ln in proc.stdout:
 		ln = ln.rstrip()
-		state = setState ( ln , state)
+		state = set_state ( ln , state)
 
 		if 	 state =='code':
 			pass
 		elif state == 'globals':
-			pushGlobals (globalVar , ln)
+			push_globals (globalVar , ln)
 		elif state == 'files':
 			pass
 		elif state == 'indicators':
@@ -81,18 +84,27 @@ def runscript(host, out, cmd ):
 	with open(out, "w") as outfile: 
 		json.dump(globalVar, outfile)
 
-
 	return True if proc.wait() == 0 else False
-
 
 # ------------------------------------------------------------------------
 # Build compile comand on the IBM i 
 # using qsh to run system form bash ( to set library list) 
 # ------------------------------------------------------------------------
-def runcmd (cmd):
+def run_cmd (cmd):
 	wrkcmd = cmd.replace("'", "'\\''") .replace("\"" , "\\\"")
 	wrkcmd = "system -vK \\\"" + wrkcmd  + "\\\""
 	return wrkcmd
+
+# ------------------------------------------------------------------------
+# only qsh on older system allow setting the library list ( bash now does)
+# ------------------------------------------------------------------------
+def set_library_list ( liblist):
+	libs = liblist.split(",")
+	retval = ''
+	for lib in libs :
+		retval += "liblist -af " + lib + ";\n"
+	# retval += "liblist > /tmp/libllist.txt;\n"
+	return retval
 
 # ------------------------------------------------------------------------
 # Main line
@@ -116,7 +128,10 @@ out = args.out
 #print args
 #print sys
 
-runscript ( host, out, runcmd ("CRTBNDRPG PGM(QTEMP/" + pgm + ") SRCFILE(" + source + ") SRCMBR(" +pgm +") REPLACE(*yes) OPTION(*XREF *NOGEN *SHOWCPY *EXPDDS *NOSHOWSKP *NOUNREF)"))
+run_script ( host, out, 
+	set_library_list ( liblist) + 
+	run_cmd ("CRTBNDRPG PGM(QTEMP/" + pgm + ") SRCFILE(" + source + ") SRCMBR(" +pgm +") REPLACE(*yes) OPTION(*XREF *NOGEN *SHOWCPY *EXPDDS *NOSHOWSKP *NOUNREF)")
+)
 
 
 ok = True
