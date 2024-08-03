@@ -11,32 +11,55 @@ import argparse, sys, os, subprocess, re, json
 # ------------------------------------------------------------------------
 def set_state (text , state ):
 		
-	if 	text == '       Global Field References:':
-		state = 'globals'
-	elif text == '       File and Record References:':
-		state = 'files'
-	elif text == '       Indicator References:':
-		state = 'indicators'
-	elif text == '       Statically bound procedures:':
-		state = 'procs'
-	elif text == '       Imported fields:':
-		state = 'imports'
-	elif text == '       Exported fields:':
-		state = 'exports'
+	text = text.strip()
+	#print(text) 	
+	if 	text == 'Global Field References:':
+		return 'symbols'
+	elif text == 'File and Record References:':
+		return 'files'
+	elif text == 'Indicator References:':
+		return 'indicators'
+	elif text == 'Statically bound procedures:':
+		return 'procs'
+	elif text == 'Imported fields:':
+		return 'imports'
+	elif text == 'Exported fields:':
+		return 'exports'
+	else: 
+		return state 
 		
-	return state
 
 # ------------------------------------------------------------------------
-# Just for now, stack globals as they are
+# Just for now, stack symbol_tables as they are
 # ------------------------------------------------------------------------
-def push_globals (globalVar , ln):
-	if ln[0:10] == '          ' and ln != '          Field             Attributes         References (D=Defined M=Modified)':
-		var  = {
-			'name'     : ln[10:28].rstrip(),
-			'dataType' : ln[28:44].rstrip(),
-			'usage'    : ln[52:999].rstrip() 
+def push_symbol_table (symbol_table , ln):
+	#print (ln)
+	if ln[0:10].strip() == '' and ln.strip() != 'Field             Attributes         References (D=Defined M=Modified)':
+		if ln[0:48].strip() != '':
+			symbol  = {
+				'name'     : ln[10:28].rstrip(),
+				'dataType' : ln[28:44].rstrip(),
+				'usage'    : ln[48:999].strip() 
+			}
+			symbol_table.append(symbol)
+		else:
+			symbol = symbol_table[-1]
+			symbol['usage'] = symbol['usage'] + ' ' + ln[48:999].strip()
+
+# ------------------------------------------------------------------------
+# Just for now, stack symbol_tables as they are
+# ------------------------------------------------------------------------
+def push_code_table (code_table, ln):
+	if ln[123:129].strip().isdigit():
+		print (ln)
+		code  = {
+			'line'     : ln[0:7].strip(),
+			'code'     : ln[7:110].rstrip()
 		}
-		globalVar.append(var)
+		if ln[123:124].strip().isdigit():
+			code['segment'] = ln[123:124].strip()
+
+		code_table.append(code)
 
 # ------------------------------------------------------------------------
 # Execute the compound script againt the IBM i
@@ -55,15 +78,19 @@ def run_script(host, out, cmd ):
 
 	# Format messages
 	state = 'code'
-	globalVar= []
+	symbol_table= []
+	code_table= []
+
+	f = open("postlist.txt", "w")
 	for ln in proc.stdout:
 		ln = ln.rstrip()
+		print (ln, file=f)
 		state = set_state ( ln , state)
 
 		if 	 state =='code':
-			pass
-		elif state == 'globals':
-			push_globals (globalVar , ln)
+			push_code_table (code_table , ln)
+		elif state == 'symbols':
+			push_symbol_table (symbol_table , ln)
 		elif state == 'files':
 			pass
 		elif state == 'indicators':
@@ -75,9 +102,15 @@ def run_script(host, out, cmd ):
 		elif state == 'exports':
 			pass
 
-# produce output:
+	f.close()
+
+	# produce output:
 	with open(out, "w") as outfile: 
-		json.dump(globalVar, outfile)
+		cst  = {
+			'code'        : code_table,
+			'symbolTable' : symbol_table,
+		}
+		json.dump(cst, outfile)
 
 	# Format messages
 	for ln in proc.stderr:
