@@ -16,10 +16,17 @@ the QRPGLESRC file in QGPL
 A more real life setup would be setting the library list and compile:
 
 ```
-python extract.py --host MY_IBM_I  --liblist FAXUDVDB,FAXUDV,FAXUDV2924,AINCLUDE --pgm fax100 --source faxudv/qsrc  --output cst.json 
+python extract.py --host MY_IBM_I  --liblist FAXUDVDB,FAXUDV,FAXUDV2924,AINCLUDE --pgm fax100 --source faxudv/qsrc  --output  fax100.extract.json 
 ```
 
 Note: the library list are comma seperated and no blanks are allowed.
+
+Next step from "extract" is to "analyze" the code:
+```
+python analyze.py --input fax100.extract.json --output fax100.analyze.json 
+```
+
+The *fax100.analyze.json* is now supposed to be the CST, we are not there yet, but look at the "dump" that examines the graph.. getting there.....  
 
 The output - the CST and the post list are both in the repo for examination.
 
