@@ -6,7 +6,7 @@ This is work in progress !!
 by running the command locally on your PC ( haivng python 3.9) 
 
 ```
-python analyze.py --host MY_IBM_I  --pgm hello --source QGPL/QRPGLESRC  --out cst.json
+python extract.py --host MY_IBM_I  --pgm hello --source QGPL/QRPGLESRC  --output cst.json
 ```
 
 
@@ -16,7 +16,7 @@ the QRPGLESRC file in QGPL
 A more real life setup would be setting the library list and compile:
 
 ```
-python analyze.py --host MY_IBM_I  --liblist FAXUDVDB,FAXUDV,FAXUDV2924,AINCLUDE --pgm fax100 --source faxudv/qsrc  --out cst.json 
+python extract.py --host MY_IBM_I  --liblist FAXUDVDB,FAXUDV,FAXUDV2924,AINCLUDE --pgm fax100 --source faxudv/qsrc  --output cst.json 
 ```
 
 Note: the library list are comma seperated and no blanks are allowed.

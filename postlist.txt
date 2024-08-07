@@ -1,5 +1,5 @@
 Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLACE(*yes) OPTION(*XREF *NOGEN *SHOWCPY *EXPDDS *NOSHOWSKP *NOUNREF) <
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page      1
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page      1
    Command  . . . . . . . . . . . . :   CRTBNDRPG
      Issued by  . . . . . . . . . . :     NLI
    Program  . . . . . . . . . . . . :   FAX100
@@ -38,7 +38,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    Generate program interface . . . :   *NO
    Include directory  . . . . . . . :
    Preprocessor options . . . . . . :   *NONE
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page      2
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page      2
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
                            S o u r c e   L i s t i n g
@@ -81,7 +81,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
          *                               PAG01            PAG01                                       *
          *                               PAG02            PAG02                                       *
          *                               PAG03            PAG03                                       *
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page      3
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page      3
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
          *                               PAG04            PAG04                                       *
@@ -126,7 +126,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
      39  * ------------------------------------------------------------- *                                        970106     003700
      40 D PAG1            C                   CONST('10')                                                         950306     003800
      41 D PAG2            C                   CONST('01')                                                         950306     003900
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page      4
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page      4
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
      42 D ADDMOD          C                   CONST('1')                                                          950306     004000
@@ -173,7 +173,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
          * RPG member name  . . . . . :  FKEYS                                                        *                     2
          * External name  . . . . . . :  AINCLUDE/AINCLILE(FKEYS)                                     *                     2
          * Last change  . . . . . . . :  07-05-20  15:59:38                                           *                     2
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page      5
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page      5
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
          * Text 'description' . . . . :  Include: F-taster returnere konstanter                       *                     2
@@ -220,7 +220,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     115+ * Standard navngivne konstanter                                                                          950718    3000200
     116+ * ------------------------------------------------------------- *                                        950718    3000300
     117+D TSLOVL          C                   CONST('0001-01-01-00.00.00.-                                        950718    3000400
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page      6
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page      6
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     118+D                                     000000')                                                            950718    3000500
@@ -267,7 +267,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
          *--------------------------------------------------------------------------------------------*                     4
          * Data structure . . . . . . :  AINFDS                                                       *                     4
          * External format  . . . . . :  AINFDSR : AINCLUDE/AINFDS                                    *                     4
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page      7
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page      7
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
          *--------------------------------------------------------------------------------------------*                     4
@@ -312,7 +312,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     187=IHEAD                                                                                                               7000001
          *--------------------------------------------------------------------------------------------*                     7
          * RPG record format  . . . . :  HEAD                                                         *                     7
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page      8
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page      8
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
          * External format  . . . . . :  HEAD : FAXUDV/FAX100D                                        *                     7
@@ -359,7 +359,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     216=I                             A   57   66  CFCFLB                          Cover Page Object library name           9000012
     217=I                             A   67   76  SYBNNM                          Banner Program Name                      9000013
     218=I                             A   77   86  SYBNLB                          Banner Library Name                      9000014
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page      9
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page      9
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     219=I                             S   87   91 0SYMARG                          Transmit Margin Pixels                   9000015
@@ -406,7 +406,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     250=I                             S   27   30 0CSRPOS                                                                  11000006
     251=I                             A   31   40  SYUSPR                          Inbound User Profile                    11000007
     252=I                             A   41  296  SYEMRT                          Inbound E-Mail Route                    11000008
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     10
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     10
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     253=I                             A  297  298  SYUE                            Spool File User exit Character in HEX   11000009
@@ -453,7 +453,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     285=I                             A  151  180  SYADR5                          Adress 5                                13000007
     286=I                             A  181  200  SYFXNO                          Fax Number                              13000008
     287=I                             A  201  220  SYPHNO                          Voice Phone number                      13000009
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     11
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     11
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     288=I                             A  221  476  SYEMAI                          E-Mail address                          13000010
@@ -500,7 +500,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     329=I                             P 1265 1265 0SYTIFF                          Use TIFF-F File                         13000051
     330=I                             A 1266 1393  SYPATH                          Image File Path                         13000052
     331=I                             P 1394 1398 0SYCFTK                          Cover Page Token                        13000053
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     12
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     12
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     332=I                             P 1399 1401 0SYCULG                          Days to keep log                        13000054
@@ -547,7 +547,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     358=I                             A  132  161  FUNAM3                          Name 3                                  16000010
     359=I                             A  162  191  FUNAM4                          Name 4                                  16000011
     360=I                             A  192  211  FUPHON                          Voice Phone                             16000012
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     13
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     13
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     361=I                             A  212  231  FUFAXN                          Fax Number                              16000013
@@ -594,7 +594,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     397=I                             P  520  520 0FUPRTY                          Queue Priority                          17000021
     398=I                             A  521  530  FUSNUS                          Selected User profile                   17000022
     399=I                             A  531  535  FUSTSG                          Selected status group                   17000023
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     14
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     14
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     400=I                             P  536  536 0FUDIR                           Selected Direction                      17000024
@@ -639,7 +639,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     439+C     PRMV          PLIST                                                                                 950217    3009100
     440+C                   PARM                    MSQUEU                                                        950217    3009200
     441+C                   PARM                    MSCOUN                                                        950217    3009300
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     15
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     15
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     442+C                   PARM                    MSKEYR            4                                           950220    3009400
@@ -686,7 +686,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     483 C                   EXFMT     PAG02                                        Page2                 02 ||    951028     011900
     484 C     DSPPAG        WHENEQ    3                                                                 X02 |+--- 960928     012000
     485 C                   EXFMT     PAG03                                        Page3                 02 ||    971006     012100
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     16
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     16
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     486 C     DSPPAG        WHENEQ    4                                                                 X02 |+--- 971006     012200
@@ -733,7 +733,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
          * Text 'description' . . . . :  INCLUDE for ILE programmer til OVRMSGF                       *                    18
          *--------------------------------------------------------------------------------------------*
     523+ * ============================================================================================           060310   18000100
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     17
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     17
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     524+ *                                                                                                        060309   18000200
@@ -780,7 +780,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     565 C                   PARM                    MONAUT            1 0          MonAutoriseret                 950325     017900
     566 C                   SELECT                                                                      B01 <---- 950325     018000
     567 C     MONAUT        WHENEQ    0                                            Sikkerhed ikke aktiv X01 +---- 950325     018100
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     18
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     18
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     568 C**                   MOVE 'FAX1025' MSGID             Bruger må det hele                           |     980925     018200
@@ -827,7 +827,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     609 C                   MOVEL     *BLANK        MSGID                                                         981008     022300
     610 C*                                                                                                        981008     022400
     611 C                   SELECT                                                                      B01 <---- 981008     022500
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     19
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     19
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     612 C* Sæt @ ind på cursors plads                                                                       |     981008     022600
@@ -874,7 +874,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     653 C     CSRFLD        WHENEQ    'SYSNSY'                                                          X01 +---- 950405     026700
     654 C                   CALL      'FAX310'                                                           01 |     951002     026800
     655 C                   PARM                    SYSNSY                                               01 |     950405     026900
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     20
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     20
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     656 C* Prompt af Message Queue                                                                          |     980820     027000
@@ -921,7 +921,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     697 C                   ENDIF                                                                       E02 |>--- 990525     031100
     698 C* Prompt af Incomming Output Queue                                                                 |     980820     031200
     699 C     CSRFLD        WHENEQ    'SYOQNM'                                                          X01 +---- 980820     031300
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     21
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     21
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     700 C                   CALL      'FAX440'                                                           01 |     980820     031400
@@ -968,7 +968,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     741 C                   ENDIF                                                                       E02 |>--- 980820     035500
     742 C* Name List User Exit Program                                                                      |     980820     035600
     743 C     CSRFLD        WHENEQ    'SYNLPG'                                                          X01 +---- 980820     035700
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     22
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     22
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     744 C                   CALL      'FAX440'                                                           01 |     980820     035800
@@ -1015,7 +1015,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     785 C                   PARM                    MSGID                                                01 |     980820     039900
     786 C     MSGID         IFEQ      *BLANK                                                            B02 |<--- 980820     040000
     787 C                   MOVEL     PMOB          SYTRPG                                               02 ||    980820     040100
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     23
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     23
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     788 C                   MOVEL     PMLB          SYTRLB                                               02 ||    980820     040200
@@ -1062,7 +1062,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     829 C                   MOVE      *OFF          *IN81                          LOCK                           950306     044300
     830 C                   MOVEA     OFF39         *IN(41)                        PosCsrRevImg                   000920     044400
     831 C                   MOVEA     OFF10         *IN(30)                        Skærm Reset/LukInput           950306     044500
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     24
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     24
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     832  *                                                                                                        030107     044600
@@ -1109,7 +1109,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     873 C                   EXSR      GETCPF                                                             01 |     960928     048700
     874 C                   MOVE      *ON           *IN35                          Skærm Vis             01 |     950306     048800
     875 C                   ENDSL                                                                       E01 >---- 950306     048900
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     25
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     25
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     876                                                                                                           080908     049000
@@ -1156,7 +1156,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     917  * Route E-Mail Address sættes til *NONE hvis blank                                                       980925     053100
     918 C     SYEMRT        IFEQ      *BLANK                                                            B01 <---- 980925     053200
     919 C                   MOVEL(P)  '*NONE'       SYEMRT                                               01 |     980925     053300
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     26
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     26
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     920 C                   ENDIF                                                                       E01 >---- 980925     053400
@@ -1203,7 +1203,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     961 C                   PARM      'X.syDPLX'    PMNAME           64                                           030405     057500
     962 C                   PARM      *BLANK        PMVALU          256                                           031024     057600
     963 C                   PARM                    ERR               1                                           030324     057700
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     27
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     27
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
     964 C                   MOVEL(P)  PMVALU        S0DPLX                                                        030324     057800
@@ -1250,7 +1250,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1005 C                   eval      S0CRPT = '*NO'                                                     01       050922     061900
    1006 C                   endif                                                                       E01       050922     062000
    1007  *                                                                                                        030324     062100
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     28
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     28
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
    1008 C                   eval      gemSYPATH = SYPATH                                                          051014     062200
@@ -1297,7 +1297,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1049 C* Valider input                                                                                          950306     066300
    1050 C                   EXSR      VALINP                                                                      950306     066400
    1051 C* Hvis ingen fejl opdateres record                                                                       951027     066500
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     29
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     29
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
    1052 C     MSGID         IFEQ      *BLANKS                                                           B01 <---- 951027     066600
@@ -1344,7 +1344,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1093  *                                                                                                  |     031024     070700
    1094  * Set Autostart SubSystem After IPL                                                                |     031024     070800
    1095  *                                                                                                  |     031024     070900
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     30
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     30
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
    1096 C                   CALL      'FAX104'                                                           01 |     031024     071000
@@ -1391,7 +1391,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1137 C* Hvis fortsat ingen fejl - farvel                                                                       050113     075100
    1138 C     MSGID         IFEQ      *BLANKS                                                           B02 <---- 050113     075200
    1139 C     ERR           ANDEQ     *OFF                                                               02 |     050113     075300
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     31
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     31
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
    1140 C                   EXSR      EXIT                                                               02 |     950323     075400
@@ -1438,7 +1438,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1181 C                   MOVE      *ON           *IN65                          RevImg PosCsr         01 |     040130     079500
    1182 C                   Z-ADD     2             DSPPAG                         Vis side med fejl     01 |     040130     079600
    1183 C                   MOVEL(P)  CPFOBJ        MSGDTA                                               01 |     040130     079700
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     32
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     32
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
    1184 C                   MOVE      'FAX1009'     MSGID                                                01 |     040130     079800
@@ -1485,7 +1485,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1225 C                   ENDIF                                                                       E01 >---- 000920     083900
    1226 C*                                                                                                        990525     084000
    1227 C* Check om valgte Hardcopy Outq findes                                                                   990525     084100
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     33
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     33
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
    1228 C* ------------------------------------                                                                   990525     084200
@@ -1532,7 +1532,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1269 C                   MOVE      'FAX1121'     MSGID                                                01 |     990525     088300
    1270 C                   CALL      'QMHSNDPM'    PMSG                                                 01 |     990525     088400
    1271 C                   ENDSL                                                                       E01 >---- 990525     088500
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     34
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     34
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
    1272 C*                                                                                                        990525     088600
@@ -1579,7 +1579,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1313 C     SYOEMD        WHENEQ    0                                            0=No message sent    X01 +---- 000920     092700
    1314  *                                                                                                  |     000920     092800
    1315 C     SYOEMD        WHENEQ    1                                            1=Only if error      X01 +---- 000920     092900
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     35
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     35
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
    1316 C     SYOEMD        OREQ      2                                            2=Message always sen  01 |     000920     093000
@@ -1626,7 +1626,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1357 C                   MOVE      *ON           *IN58                                                02 ||    951027     097100
    1358 C                   MOVE      *ON           *IN59                                                02 ||    951027     097200
    1359 C                   MOVE      *ON           ERR                                                  02 ||    951027     097300
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     36
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     36
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
    1360 C                   Z-ADD     3             DSPPAG                         Vise side med fejl    02 ||    990525     097400
@@ -1673,7 +1673,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1401 C                   Z-ADD     3             DSPPAG                         Vise side med fejl    02 ||    990525     101500
    1402 C                   MOVE      'FAX1013'     MSGID                                                02 ||    961011     101600
    1403 C                   MOVEL     SYUSPR        MSGDTA                                               02 ||    961011     101700
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     37
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     37
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
    1404 C                   CALL      'QMHSNDPM'    PMSG                                                 02 ||    961011     101800
@@ -1720,7 +1720,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1445 C     WA1           SCAN      HEX           W50                                                  01 |     960821     105900
    1446 C     W50           IFEQ      0                                                                 B02 |<--- 960821     106000
    1447 C                   MOVE      *ON           *IN62                          PosCsrRevImg          02 ||    960821     106100
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     38
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     38
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
    1448 C                   Z-ADD     4             DSPPAG                         Vise side med fejl    02 ||    990525     106200
@@ -1767,7 +1767,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1489 C                   ENDIF                                                                       E01 >---- 970701     110300
    1490 C* Dial prefix User Exit Program                                                                          971001     110400
    1491 C* -----------------------------                                                                          971001     110500
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     39
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     39
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
    1492 C     SYDPPG        IFNE      *BLANK                                                            B01 <---- 971001     110600
@@ -1814,7 +1814,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1533 C                   PARM      *BLANK        OBJATR           10                                  01 |     971006     114700
    1534 C                   PARM                    MSGSND            1                                  01 |     971006     114800
    1535 C     MSGSND        IFEQ      *ON                                                               B02 |<--- 971006     114900
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     40
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     40
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
    1536 C                   MOVE      *ON           *IN68                                                02 ||    971006     115000
@@ -1861,7 +1861,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
          *--------------------------------------------------------------------------------------------*                    19
    1573=O                       PGMQ                10A CHAR       10                                                      19000002
    1574=O                       F2ADD               14A CHAR        4                                                      19000003
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     41
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     41
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
    1575=OHEAD                                                                                                              20000001
@@ -1908,7 +1908,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1601=O                       SYSNSY              36S ZONE      1,0              Send System Name                        22000008
    1602=O                       SYCLUP              41S ZONE      5,0              Days to keep faxes                      22000009
    1603=O                       SYCULG              46S ZONE      5,0              Days to keep log                        22000010
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     42
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     42
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
    1604=O                       CFCFNM              56A CHAR       10              Cover Page Object name                  22000011
@@ -1955,7 +1955,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1635=O                       CSRLIN               3S ZONE      3,0                                                      24000002
    1636=O                       CSRCOL               6S ZONE      3,0                                                      24000003
    1637=O                       CSRRCD              16A CHAR       10                                                      24000004
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     43
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     43
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
    1638=O                       CSRFLD              26A CHAR       10                                                      24000005
@@ -2002,7 +2002,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1670=O                       SYTEXT              30A CHAR       30              Company                                 26000002
    1671=O                       SYADR1              60A CHAR       30              Adress 1                                26000003
    1672=O                       SYADR2              90A CHAR       30              Adress 2                                26000004
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     44
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     44
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
    1673=O                       SYADR3             120A CHAR       30              Adress 3                                26000005
@@ -2049,7 +2049,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1714=O                       SYBNNM            1231A CHAR       10              Banner Program Name                     26000046
    1715=O                       SYBNLB            1241A CHAR       10              Banner Library Name                     26000047
    1716=O                       SYSUNM            1251A CHAR       10              Startup Program Name                    26000048
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     45
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     45
  Line   <---------------------- Source Specifications ----------------------------><---- Comments ----> Do  Page  Change Src Seq
  Number ....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10 Num Line  Date   Id  Number
    1717=O                       SYSULB            1261A CHAR       10              Startup Library Name                    26000049
@@ -2059,7 +2059,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1721=O                       SYCFTK            1398P PACK      9,0              Cover Page Token                        26000053
    1722=O                       SYCULG            1401P PACK      5,0              Days to keep log                        26000054
         * * * * *   E N D   O F   S O U R C E   * * * * *
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     46
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     46
            A d d i t i o n a l   D i a g n o s t i c   M e s s a g e s
   Msg id  Sv Number Seq     Message text
  *RNF7089 00     26 002400  RPG provides Separate-Indicator area for file FAX100D.
@@ -2100,7 +2100,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1605    57    66 CFCFLB
    1606    67    76 SYBNNM
    1607    77    86 SYBNLB
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     47
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     47
    1608    87    91 SYMARG
    1609    92   101 SYHCNM
    1610   102   111 SYHCLB
@@ -2147,7 +2147,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1654     7    16 CSRRCD
    1655    17    26 CSRFLD
    1656    27    30 CSRPOS
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     48
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     48
    1657    31    40 SYTRPG
    1658    41    50 SYTRLB
    1659    51    60 SYCFG
@@ -2194,7 +2194,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1701  1118  1118 SYPIFF
    1702  1119  1119 SYRESO
    1703  1120  1121 SYUE
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     49
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     49
    1704  1122  1131 SYUEPG
    1705  1132  1141 SYUELB
    1706  1142  1151 SYNLPG
@@ -2241,7 +2241,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
    1694   836   836 SYDLVY
    1695   837  1092 SYOEMR
    1696  1093  1093 SYOEMD
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     50
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     50
    1697  1094  1103 SYHCNM
    1698  1104  1113 SYHCLB
    1699  1114  1114 SYHCOP
@@ -2276,7 +2276,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
     113    3 STANDART   AINCLUDE   AINCLILE   STANDART     277  25-06-20 11:24:25
     522   18 FAX1200ILE FAXUDV     QSRC       FAX1200ILE   277  07-05-20 18:33:54
           * * * * *   E N D   O F   / C O P Y   M E M B E R S   * * * * *
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     51
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     51
                      K e y   F i e l d   I n f o r m a t i o n
           File           Internal    External
             Record       field name  field name  Attributes
@@ -2294,7 +2294,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
             FUS01R is the RPG name of the external format FUS00R.
                          FUUSPR                  CHAR       10
   * * * * *   E N D   O F   K E Y   F I E L D   I N F O R M A T I O N   * * * * *
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     52
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     52
                            C r o s s   R e f e r e n c e
        File and Record References:
           File              Device             References (D=Defined)
@@ -2337,7 +2337,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
           *IN40             N(1)                  493M    633M    798M
           *IN41             N(1)                 1326M
           *IN42             N(1)                 1519M
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     53
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     53
           *IN44             N(1)                 1319M
           *IN45             N(1)                 1338M
           *IN46             N(1)                 1132M
@@ -2384,7 +2384,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
           AINFDS            DS(583)                27     158D
           APIRTN            DS(128)               153D    414M    425M    436M
                                                   444M
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     54
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     54
  *RNF7031 APIWRK            DS(90)                141D
  *RNF7031 ASFACT            B(4,0)                166D
  *RNF7031 ASFEND            B(4,0)                167D
@@ -2431,7 +2431,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
                                                  1637    1654
           DELMOD            CONST                  45D    865    1058
           DSPMOD            CONST                  46D    810     871     880
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     55
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     55
                                                  1046
           DSPPAG            P(1,0)                480     482     484     486
                                                   488     558M    586     590D
@@ -2478,7 +2478,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
  *RNF7031 FULNTK            P(9,0)                364D    392M
  *RNF7031 FUNAM1            A(50)                 356D    384M
  *RNF7031 FUNAM2            A(30)                 357D    385M
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     56
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     56
  *RNF7031 FUNAM3            A(30)                 358D    386M
  *RNF7031 FUNAM4            A(30)                 359D    387M
  *RNF7031 FUOQLB            A(10)                 365D    393M
@@ -2525,7 +2525,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
                                                   873    1013D
           HEX               CONST                  54D   1437    1445
           IPADR             A(256)                934D
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     57
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     57
  *RNF7031 JOB_NAME          A(10)                 171D
  *RNF7031 JOB_NO            A(6)                  173D
  *RNF7031 JOB_USER          A(10)                 172D
@@ -2572,7 +2572,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
                                                   440M
           MSTYPE            A(10)                 144D    410M    421M    432D
                                                   575M
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     58
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     58
           NSROOT            DS(128)                74D    461     883     889
                                                  1069
           OBJATR            A(10)                1199D   1237D   1283D   1354D
@@ -2619,7 +2619,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
           PMOB              A(10)                 659D    665     677D    683
                                                   689D    695     701D    707
                                                   713D    719     733D    739
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     59
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     59
                                                   745D    751     757D    763
                                                   769D    775     781D    787
           PMSG              PLIST                 405D    572     577     588
@@ -2666,7 +2666,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
           SYADR2            A(30)                 196M    282M   1585    1672
           SYADR3            A(30)                 197M    283M   1586    1673
           SYADR4            A(30)                 198M    284M   1587    1674
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     60
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     60
           SYADR5            A(30)                 199M    285M   1588    1675
           SYBNLB            A(10)                 218M    325M    678     684M
                                                   915M   1192M   1196M   1607
@@ -2713,7 +2713,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
           SYMSLB            A(10)                 261M    323M    770     776M
                                                  1510    1513M   1650    1713
           SYMSPG            A(10)                 260M    322M    775M   1509
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     61
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     61
                                                  1512M   1649    1712
           SYNLLB            A(10)                 257M    317M    746     752M
                                                   782    1476    1479M   1646
@@ -2760,7 +2760,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
                                                  1436    1444    1642    1703
           SYUELB            A(10)                 255M    315M    734     740M
                                                  1457    1460M   1644    1705
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     62
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     62
           SYUEPG            A(10)                 254M    314M    739M   1429
                                                  1456    1459M   1643    1704
           SYUSPR            A(10)                 251M    300M    728M    909
@@ -2805,7 +2805,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
           W75               P(7,5)               1219D   1220
        Indicator References:
           Indicator                            References (D=Defined M=Modified)
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     63
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     63
           *IN                                     647M    830M    831M   1149M
           30                                      831M
           31                                      187D    831M    844M
@@ -2852,7 +2852,7 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
                                                  1358M
           60                                      228D    647M    830M   1149M
                                                  1377M
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     64
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     64
           61                                      228D    647M    830M   1149M
                                                  1378M
           62                                      245D    647M    830M   1149M
@@ -2899,10 +2899,10 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
           81                                      805D    809     829M    872D
                                                   897
           82                                     1014D   1015    1062    1063D
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     65
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     65
           LR                                     1028M
         * * * * *   E N D   O F   C R O S S   R E F E R E N C E   * * * * *
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     66
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     66
                        E x t e r n a l   R e f e r e n c e s
        Statically bound procedures:
           Procedure                            References
@@ -2914,14 +2914,14 @@ Command > CRTBNDRPG PGM(QTEMP/fax100) SRCFILE(faxudv/qsrc) SRCMBR(fax100) REPLAC
           Field             Attributes         Defined
           No references in the source.
     * * * * *   E N D   O F   E X T E R N A L   R E F E R E N C E S   * * * * *
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     67
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     67
                            M e s s a g e   S u m m a r y
   Msg id  Sv Number Message text
  *RNF7031 00     99 The name or indicator is not referenced.
  *RNF7066 00      1 Record-Format name of Externally-Described file is not used.
  *RNF7089 00      1 RPG provides Separate-Indicator area for file.
         * * * * *   E N D   O F   M E S S A G E   S U M M A R Y   * * * * *
-  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   04-08-24 00:02:08        Page     68
+  5770WDS V7R2M0  140418 RN        IBM ILE RPG             QTEMP/FAX100             DKSRV206   06-08-24 23:28:37        Page     68
                              F i n a l   S u m m a r y
    Message Totals:
      Information  (00) . . . . . . . :      101
