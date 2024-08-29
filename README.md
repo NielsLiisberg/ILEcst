@@ -36,3 +36,7 @@ of using the ILE compiler to do all the extraction needed to build the CST
 This first version only produces a JSON of the global variables used in a program.
 
 Stay tuned
+
+
+# log
+Now also have comments and free-form the the graph "dump"

@@ -13,14 +13,34 @@ import argparse, sys, os, subprocess, re, json
 def locate (lists , key , value):
 	for i in lists:
 		try: 
-			print ('>' + i[key] + '<')
-			print ('>' + value  + '<')
+			#print ('>' + i[key] + '<')
+			#print ('>' + value  + '<')
 			if i[key] == value:
 				return  i
 		except:
 			k = 0
 
 	return None
+
+# ------------------------------------------------------------------------
+# build the comment
+#L0N01Factor1+++++++Opcode&ExtFactor2+++++++Result++++++++Len++D+HiLoEq....Comments 
+def build_comment (line , code): 	
+
+	comment = {}
+	comment['line'] = line 
+	comment['comment'] = code[3:999].strip()
+	return comment
+
+# ------------------------------------------------------------------------
+# build the free format RPG
+#L0N01Factor1+++++++Opcode&ExtFactor2+++++++Result++++++++Len++D+HiLoEq....Comments 
+def build_freeform (line , code): 	
+
+	freeform = {}
+	freeform['line'] = line 
+	freeform['free'] = code[3:80].strip()
+	return freeform
 
 # ------------------------------------------------------------------------
 # build the C-spec as dict
@@ -33,7 +53,33 @@ def build_c_spec(source):
 
 	c_spec['line'] = source['line']
 	if  code[21:26].strip():
-		c_spec[	'opcode'    ] =  code[21:27].strip().lower()   
+		opcode = code[21:27].strip().lower()
+		if opcode[0:2] == 'if':
+			c_spec[	'opcode' ] =  'if'
+			c_spec[	'mod'    ] =   opcode[2:4]
+		elif opcode[0:2] == 'or':
+			c_spec[	'opcode' ] =  'or'
+			c_spec[	'mod'    ] =   opcode[2:4]
+		elif opcode[0:3] == 'and':
+			c_spec[	'opcode' ] =  'and'
+			c_spec[	'mod'    ] =   opcode[3:5]
+		elif opcode[0:3] == 'dou':
+			c_spec[	'opcode' ] =  'dou'
+			c_spec[	'mod'    ] =   opcode[3:5]
+		elif opcode[0:3] == 'dow':
+			c_spec[	'opcode' ] =  'dow'
+			c_spec[	'mod'    ] =   opcode[3:5]
+		elif opcode[0:4] == 'when':
+			c_spec[	'opcode' ] =  'when'
+			c_spec[	'mod'    ] =   opcode[4:6]
+		elif opcode[0:3] == 'cas':
+			c_spec[	'opcode' ] =  'cas'
+			c_spec[	'mod'    ] =   opcode[3:5]
+		elif opcode[0:3] == 'cab':
+			c_spec[	'opcode' ] =  'cab'
+			c_spec[	'mod'    ] =   opcode[3:5]
+		else:	
+			c_spec[	'opcode'    ] =  opcode
 	if  code[28:30].strip():
 		c_spec[	'extension' ] =  code[28:30].strip()   
 	if  code[7:20].strip():
@@ -53,7 +99,7 @@ def build_c_spec(source):
 	if  code[70:72].strip() and code[70:72].strip() != '--':
 		c_spec[	'eq'        ] =  code[70:72].strip()   
 	if  code[76:89].strip():
-		c_spec[	'comments'  ] =  code[76:98].strip()  
+		c_spec[	'comments'  ] =  code[76:97].strip()  
 	c_spec['source'] = code
 
 	return c_spec
@@ -76,8 +122,13 @@ def run_analyze (input_file_name , output_file_name ):
 	# Load dicts from graph 
 	for source in extract['source']:
 		code = source['code']
+		line = source['line']
 		if   code[1:2].upper() == 'C' and code[2:3] != '*':
 			c_specs.append(build_c_spec(source))
+		elif code[2:3] == '*' and line > '' and re.search(r"[a-zA-Z0-9]", code[3:80]):
+			c_specs.append(build_comment(line ,code))
+		elif code[1:4].strip() == ''  and code[3:80].strip() > '':
+			c_specs.append(build_freeform(line ,code))
 
 	for symbol in extract['symbolTable']:
 		symbol_table.append(symbol)
@@ -151,11 +202,14 @@ def produce_code(c_specs , symbol_table):
 	start = 0
 	for i in range(len(c_specs)):
 		obj = c_specs[i]
-		print (obj)
-		if obj['opcode'] != 'plist' and obj['opcode'] != 'parm':
-			start = i
-			break
-	print (start)
+		#print (obj)
+		try:
+			if obj['opcode'] != 'plist' and obj['opcode'] != 'parm':
+				start = i
+				break
+		except:
+			pass
+	#print (start)
 
 	return code
 
